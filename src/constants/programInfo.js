@@ -93,14 +93,14 @@ export const headline = "Learn to Code at Codesmith" // update headline as appro
 
 export const leadContent = {
     header: "Your last step on the path toward changing your career",
-    paragraph: `${schoolName}'s Software Engineering Immsersive program teaches full-stack JavaScript to prepare you for a career in development. ${schoolName} partners with Skills Fund to offer tuition${faq.costOfLiving ? ' and cost of living' : ''} financing so more students like you can access their program.`
+    paragraph: `${schoolName}'s Software Engineering Immersive program teaches full-stack JavaScript to prepare you for a career in development. ${schoolName} partners with Skills Fund to offer tuition${faq.costOfLiving ? ' and cost of living' : ''} financing so more students like you can access their program.`
 }
 
 export const threeStepCardText = {
     step1: "",
     step2: {
-        header: "select your program",
-        text: "Codesmith focuses exclusively on its Software Engineering Immersive program."
+        header: "select your campus",
+        text: "Codesmith offers their Software Engineering Immersive program in Los Angeles and NYC."
     },
     step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`
 }
