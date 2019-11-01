@@ -70,7 +70,7 @@ export const faq = { // faq section
     loanRange: [
         {
             programName: "Software Engineering Immersive",
-            maxAmount: "$17,700",
+            maxAmount: "$18,800",
             col: true,
             colAmount: "$6,000"
         }
@@ -131,7 +131,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
         name: "Software Engineering Immersive",
         url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKCSMItH19",
         loanInfo: { // match loanInfo in first metro below
-            maxLoanAmt: 23700,
+            maxLoanAmt: 24800,
             loanTerm36: true,
             loanTerm60: true,
             '0': { // interest-only 
@@ -149,7 +149,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
           {
             location: "Metro 1",
             loanInfo: { // // match loanInfo to Program 1 above
-              maxLoanAmt: 23700,
+              maxLoanAmt: 24800,
               loanTerm36: true,
               loanTerm60: true,
               '0': { 
@@ -317,7 +317,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
 ]
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
-export const programMaxText = "Choose the loan amount that works best for you. Borrow up to $17,700 for the Software Engineering Immersive tuition & $6,000 for cost of living"
+export const programMaxText = "Choose the loan amount that works best for you. Borrow up to $18,800 for the Software Engineering Immersive tuition & $6,000 for cost of living"
 
 export const paymentTable = {
     headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
