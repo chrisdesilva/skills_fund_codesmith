@@ -10,8 +10,8 @@ export const schoolInfo = {
   // term details section
   interestRate36: "8.99%",
   interestRate60: "10.99%",
-  APRRange36: "11.59%",
-  APRRange60: "12.84%",
+  APRRange36: "11.13 - 11.59%",
+  APRRange60: "12.63 - 12.84%",
   interestOnly: [
     {
       // for multiple examples of interest only, add items to interestOnly array
@@ -65,8 +65,8 @@ export const faq = {
   exampleLoanAmount: "$12,000",
   interestRate36: "8.99%",
   interestRate60: "10.99%",
-  APR36: "11.59%",
-  APR60: "12.84%",
+  APR36: "11.13 - 11.59%",
+  APR60: "12.63 - 12.84%",
   IOPayment36: "$94.40",
   IOPayment60: "$115.40",
 
@@ -76,6 +76,18 @@ export const faq = {
       programName: "Software Engineering Immersive",
       maxAmount: "$18,800",
       col: true,
+      colAmount: "$6,000",
+    },
+    {
+      programName: "Software Engineering Immersive - Remote",
+      maxAmount: "$18,880",
+      col: true,
+      colAmount: "$6,000",
+    },
+    {
+      programName: "Software Engineering Immersive",
+      maxAmount: "$18,880",
+      col: false,
       colAmount: "$6,000",
     },
   ],
@@ -116,9 +128,9 @@ export const netlifyFormName = "codesmith_contact"
 
 export const GATracking = "UA-68312423-1"
 
-export const hubspotFormId = "999b0e7d-8bd3-4d81-9989-edd047ff74d1" // create Hubspot form, get form id after publishing
+export const hubspotFormId = "3e425d5d-8b24-412e-9fe2-b39f565bb4d6" // create Hubspot form, get form id after publishing
 
-export const selectAProgram = "program_name" // update school name to match form field on Hubspot, *** change to "program_name" if only one program ***"
+export const selectAProgram = "select_a_codesmith_program" // update school name to match form field on Hubspot, *** change to "program_name" if only one program ***"
 
 // ***** END GENERAL SCHOOL INFO *****
 
@@ -162,6 +174,142 @@ export const programLoanInfo = [
         loanInfo: {
           // // match loanInfo to Program 1 above
           maxLoanAmt: 24800,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 6,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro 2",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro 3",
+        loanInfo: {
+          maxLoanAmt: 20545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "Software Engineering Immersive - Part-Time",
+    url: "https://my.skills.fund/application?lenderCode=SKCSSEIRPT20",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 18880,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        // interest-only
+        k: 12,
+        apr36: 11.13,
+        apr60: 12.63,
+      },
+      "Immediate Repayment": null, // immediate repayment
+    },
+    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
+    showLoanTypes: false, // true if both IR and IO are available
+    loanTypes: ["Interest Only"],
+    locations: ["Metro 1", "Metro 2", "Metro 3"],
+    metros: [
+      // list in same order as locations array above
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // // match loanInfo to Program 1 above
+          maxLoanAmt: 18880,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 12,
+            apr36: 11.13,
+            apr60: 12.63,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro 2",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro 3",
+        loanInfo: {
+          maxLoanAmt: 20545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "Software Engineering Immersive - Remote",
+    url: "https://my.skills.fund/application?lenderCode=SKCSSEIRFT20",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 24880,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        // interest-only
+        k: 6,
+        apr36: 11.59,
+        apr60: 12.84,
+      },
+      "Immediate Repayment": null, // immediate repayment
+    },
+    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
+    showLoanTypes: false, // true if both IR and IO are available
+    loanTypes: ["Interest Only"],
+    locations: ["Metro 1", "Metro 2", "Metro 3"],
+    metros: [
+      // list in same order as locations array above
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // // match loanInfo to Program 1 above
+          maxLoanAmt: 24880,
           loanTerm36: true,
           loanTerm60: true,
           "Interest Only": {
