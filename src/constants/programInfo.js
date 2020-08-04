@@ -146,9 +146,9 @@ export const faq = {
       colAmount: "$6,000",
     },
     {
-      programName: "Software Engineering Immersive",
+      programName: "Software Engineering Immersive - Part-Time",
       maxAmount: "$18,880",
-      col: false,
+      col: true,
       colAmount: "$6,000",
     },
   ],
