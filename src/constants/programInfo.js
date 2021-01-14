@@ -135,7 +135,7 @@ export const faq = {
   loanRange: [
     {
       programName: "Software Engineering Immersive",
-      maxAmount: "$19,895",
+      maxAmount: "$19,350",
       col: true,
       colAmount: "$6,000",
     },
@@ -147,7 +147,7 @@ export const faq = {
     // },
     {
       programName: "Software Engineering Immersive - Part-Time",
-      maxAmount: "$20,800",
+      maxAmount: "$19,350",
       col: true,
       colAmount: "$6,000",
     },
