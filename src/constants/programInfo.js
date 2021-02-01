@@ -139,12 +139,12 @@ export const faq = {
       col: true,
       colAmount: "$6,000",
     },
-    // {
-    //   programName: "Software Engineering Immersive - Remote",
-    //   maxAmount: "$19,895",
-    //   col: true,
-    //   colAmount: "$6,000",
-    // },
+    {
+      programName: "Software Engineering Immersive - Remote",
+      maxAmount: "$19,350",
+      col: true,
+      colAmount: "$6,000",
+    },
     {
       programName: "Software Engineering Immersive - Part-Time",
       maxAmount: "$19,350",
@@ -343,74 +343,74 @@ export const programLoanInfo = [
       },
     ],
   },
-  // {
-  //   name: "Software Engineering Immersive - Remote",
-  //   url: "https://my.skills.fund/application?lenderCode=SKCSSEIRFT20",
-  //   loanInfo: {
-  //     // match loanInfo in first metro below
-  //     maxLoanAmt: 24880,
-  //     loanTerm36: true,
-  //     loanTerm60: true,
-  //     "Interest Only": {
-  //       // interest-only
-  //       k: 6,
-  //       apr36: 11.59,
-  //       apr60: 12.84,
-  //     },
-  //     "Immediate Repayment": null, // immediate repayment
-  //   },
-  //   defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
-  //   showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
-  //   showLoanTypes: false, // true if both IR and IO are available
-  //   loanTypes: ["Interest Only"],
-  //   locations: ["Metro 1", "Metro 2", "Metro 3"],
-  //   metros: [
-  //     // list in same order as locations array above
-  //     {
-  //       location: "Metro 1",
-  //       loanInfo: {
-  //         // // match loanInfo to Program 1 above
-  //         maxLoanAmt: 24880,
-  //         loanTerm36: true,
-  //         loanTerm60: true,
-  //         "Interest Only": {
-  //           k: 6,
-  //           apr36: 11.59,
-  //           apr60: 12.84,
-  //         },
-  //         "Immediate Repayment": null,
-  //       },
-  //     },
-  //     {
-  //       location: "Metro 2",
-  //       loanInfo: {
-  //         maxLoanAmt: 15545,
-  //         loanTerm36: true,
-  //         loanTerm60: true,
-  //         "Interest Only": {
-  //           k: 5,
-  //           apr36: 11.59,
-  //           apr60: 12.84,
-  //         },
-  //         "Immediate Repayment": null,
-  //       },
-  //     },
-  //     {
-  //       location: "Metro 3",
-  //       loanInfo: {
-  //         maxLoanAmt: 20545,
-  //         loanTerm36: true,
-  //         loanTerm60: true,
-  //         "Interest Only": {
-  //           k: 5,
-  //           apr36: 11.59,
-  //           apr60: 12.84,
-  //         },
-  //         "Immediate Repayment": null,
-  //       },
-  //     },
-  //   ],
-  // },
+  {
+    name: "Software Engineering Immersive - Remote",
+    url: "https://my.skills.fund/application?lenderCode=SKCSSEIRFT20",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 19350,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        // interest-only
+        k: 6,
+        apr36: 11.59,
+        apr60: 12.84,
+      },
+      "Immediate Repayment": null, // immediate repayment
+    },
+    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
+    showLoanTypes: false, // true if both IR and IO are available
+    loanTypes: ["Interest Only"],
+    locations: ["Metro 1", "Metro 2", "Metro 3"],
+    metros: [
+      // list in same order as locations array above
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // // match loanInfo to Program 1 above
+          maxLoanAmt: 24880,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 6,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro 2",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro 3",
+        loanInfo: {
+          maxLoanAmt: 20545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+    ],
+  },
 ]
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
